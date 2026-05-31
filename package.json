@@ -1,5 +1,5 @@
 {
-  "name": "nuclear-neptune",
+  "name": "website",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -9,9 +9,28 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint . --fix",
+    "format": "prettier . --write"
   },
   "dependencies": {
-    "astro": "^6.4.2"
+    "@astrojs/react": "^5.0.6",
+    "@tailwindcss/vite": "^4.3.0",
+    "astro": "^6.4.2",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-astro": "^1.7.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-unicorn": "^64.0.0",
+    "prettier": "^3.8.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.8.0",
+    "typescript-eslint": "^8.60.0"
   }
 }
